@@ -6,7 +6,10 @@ syn match linkDash '^- ' nextgroup=note skipwhite
 syn match noteListStar '^* ' nextgroup=note skipwhite
 syn match noteListClosed '^x ' nextgroup=done skipwhite
 
-syn match note '.*$' contained
+syn match data_Line '@\d\d\d\d-\d\d-\d\d'
+hi data_Line guifg=#d65d0e
+
+syn match note '.*\ze@' contained
 syn match done '.*$' contained
 hi note	guifg=#282828
 hi done	cterm=italic guifg=#a89984
