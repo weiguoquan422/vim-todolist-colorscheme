@@ -1,16 +1,27 @@
-# Vim To Do
+# vim-todolist-colorscheme
 Simple syntax highlighting for vim todo notes.
 
 ## Usage:
-- download notes.vim file & put in ~/.vim/colors/ (or wherever your vim config files are located)
-- use colorscheme in vim with `:color notes`
-- or put this in .vimrc so any *.n file will use this colorscheme
+
+download:
+`Plug 'weiguoquan422/vim-todolist-colorscheme'`
+
+and add this in your .vimrc:
+
 ```
-syntax highlighting for notes
 autocmd BufWinEnter *.n colorscheme notes
-autocmd BufWinEnter *.n set nonumber
 autocmd BufWinEnter *.n set foldcolumn=2
 ```
 
+recommended colorscheme:
+```
+"color scheme
+colorscheme gruvbox
+set background=light
+```
+
 ## Example
-![screenshot](todo.png)
+![screenshot](./todo_list_color.jpg)
+
+## Thanks
+<https://github.com/mathewkramsch/vim_todo>
