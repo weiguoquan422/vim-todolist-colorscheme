@@ -21,7 +21,7 @@ set background=light
 ```
 
 ## Example
-![screenshot](./todo_list_color.jpg)
+![screenshot](./todo_list.jpg)
 
 ## Thanks
 <https://github.com/mathewkramsch/vim_todo>

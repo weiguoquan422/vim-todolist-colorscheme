@@ -1,11 +1,6 @@
 " notes.vim - matches gruvbox color scheme
 " syntax highlighting for school notes/ todo lists
 
-hi Normal guifg=#a89984
-hi FoldColumn guibg=NONE ctermbg=NONE
-hi Visual guibg=#000000 guifg=#b8bb26
-"hi CursorLine guibg=#111111 guifg=NONE
-
 " for marking tasks (for todo lists)
 syn match noteDash '^- ' nextgroup=note skipwhite
 syn match noteListStar '^* ' nextgroup=note skipwhite
@@ -35,4 +30,4 @@ hi title cterm=bold guifg=#b8bb26
 
 " for comments
 syn match comment '//.*$'
-hi comment cterm=italic guifg=#665c54
+hi comment cterm=italic guifg=#a89984
