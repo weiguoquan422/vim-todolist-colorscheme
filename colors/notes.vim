@@ -6,8 +6,10 @@ syn match linkDash '^- ' nextgroup=note skipwhite
 syn match noteListStar '^* ' nextgroup=note skipwhite
 syn match noteListClosed '^x ' nextgroup=done skipwhite
 
-syn match data_Line '@\d\d\d\d-\d\d-\d\d'
-hi data_Line guifg=#d65d0e
+syn match deadLine '@' nextgroup=date skipwhite
+hi deadLine guifg=#d65d0e
+syn match date '.*$' contained
+hi date	guifg=#d65d0e
 
 syn match note '.*\ze@' contained
 syn match done '.*$' contained
