@@ -10,7 +10,6 @@ and add this in your .vimrc:
 
 ```
 autocmd BufWinEnter *.n colorscheme notes
-autocmd BufWinEnter *.n set foldcolumn=2
 ```
 
 recommended colorscheme:
